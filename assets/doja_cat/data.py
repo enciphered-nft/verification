@@ -5,8 +5,6 @@ METADATA = {
     "born": datetime.datetime(1995, 10, 21),
     "occupation": ["Singer", "rapper", "songwriter", "record producer", "dancer"],
     "years_active": "2012-present",
-    "total_award_wins": 64,
-    "total_nominations": 163,
     "awards": [
  {
    "Organization": "American Music Awards",
