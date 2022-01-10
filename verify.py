@@ -7,7 +7,8 @@ def get_signature(dir_name: str, msg: str, hashing: str) -> str:
     with open(f"assets/{dir_name}/secret_key.txt", "rb") as secret_key_txt_file:
         hashing_algorithms = {
             "1": hashlib.sha256,
-            "2": hashlib.md5
+            "2": hashlib.sha512,
+            "3": hashlib.md5
         }
         signature = hmac.new(secret_key_txt_file.read(), msg, hashing_algorithms[hashing])
         return signature
@@ -26,7 +27,8 @@ def verify_hash_signature() -> str:
     hashing_algo = input(
         """
         [1] sha256
-        [2] md5
+        [2] sha512
+        [3] md5
     
         Select hashing algorithm (enter index of selected option): 
         """
