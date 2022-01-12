@@ -12,6 +12,30 @@ The generated **hash signature** can be verified only using `SECRET_KEY`.
 
 ## Steps to verify
 
+You can check verification by using online tools like below:
+
+https://www.devglan.com/online-tools/hmac-sha256-online
+
+- Enter the message such as "Elon Musk"
+- Copy the secret key content of particular asset and paste the required field
+- Select proper cryptographic Hash Function (take a look footer of NFT e.g. sha-256)
+- Click the compute hash and the output should be same as NFT.
+
+Also if you want to see the plain text format of encoded secret key:
+
+- Copy the content of `signature.txt` file and decode it by using online tool below:
+
+https://codebeautify.org/base64-to-image-converter
+
+- Copy the content of `metadata.txt` file and decode it by using online tool below:
+
+https://www.base64decode.org
+
+
+Remember the `secret_key.txt` file is a mixed version of these two file above.
+
+## Steps to verify (as a Developer)
+
 - Download **Python 3**
 - Navigate to the project folder (from terminal/cmd)
 - Run following command and follow instruction for verification
