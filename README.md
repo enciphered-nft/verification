@@ -16,6 +16,10 @@ You can check verification by using online tools like below:
 
 https://www.devglan.com/online-tools/hmac-sha256-online
 
+or
+
+https://www.javainuse.com/hmac
+
 - Enter the message such as "Elon Musk"
 - Copy the secret key content of particular asset and paste the required field
 - Select proper cryptographic Hash Function (take a look footer of NFT e.g. sha-256)
